@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Box Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.35.0/tabler-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="bg-amber-200 sticky top-0 shadow-md z-1">
+      <nav
+        class="container mx-auto px-3 md:px-0 flex justify-between items-center"
+      >
+        <a href="/" class="w-[80px] md:w-[120px] outline-none">
+          <img src="images/logo.png" class="max-w-full" loading="lazy" />
+        </a>
+
+        <div class="flex items-center">
+          <ul
+            class="hidden md:flex flex-1 flex-col md:flex-row md:justify-between items-center gap-[30px] md:gap-5 absolute md:relative top-full md:top-0 left-0 bg-white w-full h-screen md:h-0"
+          >
+            <li
+              class="text-center w-full md:w-fit text-main py-5 md:py-7 px-3 font-bold border-b-3"
+            >
+              <a href="/">الرئيسية</a>
+            </li>
+            <li
+              class="text-center w-full md:w-fit text-main py-5 md:py-7 px-3 hover:font-bold border-b-3 border-transparent hover:border-[#a6225b] duration-300"
+            >
+              <a href="">من نحن</a>
+            </li>
+            <li
+              class="text-center w-full md:w-fit text-main py-5 md:py-7 px-3 hover:font-bold border-b-3 border-transparent hover:border-[#a6225b] duration-300"
+            >
+              <a href="">الخدمات</a>
+            </li>
+            <li
+              class="text-center w-full md:w-fit text-main py-5 md:py-7 px-3 hover:font-bold border-b-3 border-transparent hover:border-[#a6225b] duration-300"
+            >
+              <a href="">تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <div class="cursor-pointer menu-btn">
+            <i class="ti ti-language text-2xl text-white"></i>
+          </div>
+          <div
+            class="flex justify-center items-center w-[25px] h-[25px] text-main border block md:hidden"
+          >
+            <i class="ti ti-menu-2 text-lg md:text-2xl"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Hero -->
+    <section class="h-[85vh] relative">
+      <div
+        class="container mx-auto px-3 md:px-0"
+      >
+      <div class="flex flex-col md:flex-row justify-between items-center gap-[20px] h-full py-32">
+        <div class="w-full md:w-1/2">
+          <h1 class="text-5xl">ابدأ بسؤال.. وافتح أبواب المعرفة</h1>
+          <p class="pt-5 text-lg">
+            السؤال هو أول خطوة نحو الفهم والتعلّم الحقيقي. في منصة ابدأ بسؤال،
+            نؤمن أن كل فكرة عظيمة تبدأ بسؤال بسيط. انضم إلينا، وكن جزءًا من
+            مجتمع يتشارك الأسئلة، وينمو بالإجابات.
+          </p>
+        </div>
+        <div>
+          <div class="pyramid-gyro">
+            <div class="pyramid-axis">
+              <div class="pyramid-wall front">
+                <div class="question">؟</div>
+              </div>
+              <div class="pyramid-wall back">
+                <div class="question">؟</div>
+              </div>
+              <div class="pyramid-wall left">
+                <div class="question">؟</div>
+              </div>
+              <div class="pyramid-wall right">
+                <div class="question">؟</div>
+              </div>
+
+              <div class="bottom"></div>
+              <div class="shadow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+    <!-- Start About -->
+     <section class="py-16">
+      <div class="container mx-auto px-3 md:px-0">
+        <div>
+          <head>
+            <h1 class="text-2xl font-bold">من نحن؟ </h1>
+            <p class="text-slate-500">ببساطة، نحن إجابتك الأولى</p>
+          </head>
+        </div>
+        <div class="flex"></div>
+      </div>
+     </section>
+    <!-- End About -->
+
+    <!-- Hero Steps Section -->
+<section id="steps" class="py-16 bg-white">
+  <div class="container mx-auto px-3 md:px-0">
+    <h2 class="text-3xl font-bold text-center mb-12">كيف نعمل؟</h2>
+
+    <div class="relative border-l-4 border-primary ml-5 md:ml-0 pl-6 space-y-12">
+
+      <!-- Step 1 -->
+      <div class="flex items-start gap-6" data-aos="fade-up">
+        <div class="absolute -left-12 top-0 text-primary text-3xl bg-white rounded-full shadow-md p-2">
+          <i class="bx bx-question-mark"></i>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-1">نستقبل سؤالك</h4>
+          <p class="text-gray-600">يمكن لأي طالب أو مهتم أن يرسل سؤاله في أي وقت.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flex items-start gap-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="absolute -left-12 top-1 text-primary text-3xl bg-white rounded-full shadow-md p-2">
+          <i class="bx bx-search-alt"></i>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-1">نبحث عن إجابة دقيقة</h4>
+          <p class="text-gray-600">يقوم الفريق المتخصص بمراجعة السؤال وتقديم الإجابة الصحيحة والمبسطة.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flex items-start gap-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="absolute -left-12 top-1 text-primary text-3xl bg-white rounded-full shadow-md p-2">
+          <i class="bx bx-message-dots"></i>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-1">نرد عليك</h4>
+          <p class="text-gray-600">يتم إرسال الرد إليك مباشرة أو نشره ليستفيد الجميع.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="flex items-start gap-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="absolute -left-12 top-1 text-primary text-3xl bg-white rounded-full shadow-md p-2">
+          <i class="bx bx-group"></i>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-1">نبني مجتمع فضولي</h4>
+          <p class="text-gray-600">كل سؤال يسهم في بناء منصة معرفية مفتوحة للجميع.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+
+      const btn = document.querySelector(".menu-btn");
+      btn.onclick = () => console.log("bien");
+      console.log(btn);
+    </script>
+  </body>
+</html>
