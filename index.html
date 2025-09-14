@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>الرئيسيه</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Tailwind -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Box Icon -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -19,52 +17,70 @@
       rel="stylesheet"
     />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <!-- Start Header -->
-    <header class="bg-amber-200 sticky top-0 shadow-md z-1">
+    <header class="bg-alt sticky top-0 shadow-md z-[50]">
       <nav
         class="container mx-auto px-3 md:px-0 flex justify-between items-center"
       >
-        <a href="/" class="w-[80px] md:w-[120px] outline-none">
+        <a href="index.html" class="w-[80px] md:w-[100px] outline-none">
           <img src="images/logo.png" class="max-w-full" loading="lazy" />
         </a>
 
         <div class="flex items-center">
           <ul
-            class="hidden md:flex flex-1 flex-col md:flex-row md:justify-between items-center gap-[30px] md:gap-5 absolute md:relative top-full md:top-0 left-0 bg-white w-full h-screen md:h-0"
+            class="transition-all duration-300 ease-in-out opacity-0 md:!opacity-100 scale-95 md:!scale-100 translate-y-4 md:!translate-y-0 md:!flex flex-1 flex-col md:flex-row md:justify-between items-center gap-[30px] md:gap-5 absolute md:relative top-full md:top-0 left-0 bg-amber-50 w-full h-screen md:h-0"
           >
-            <li
-              class="text-center w-full md:w-fit text-main py-5 md:py-7 px-3 font-bold border-b-3"
-            >
-              <a href="/">الرئيسية</a>
+            <li>
+              <a
+                href="index.html"
+                class="text-center w-full md:w-fit text-main py-5 px-3 font-bold border-b-3"
+                >الرئيسية</a
+              >
             </li>
-            <li
-              class="text-center w-full md:w-fit text-main py-5 md:py-7 px-3 hover:font-bold border-b-3 border-transparent hover:border-[#a6225b] duration-300"
-            >
-              <a href="">من نحن</a>
+            <li>
+              <a
+                class="text-center w-full md:w-fit text-slate-800 font-bold py-5 px-3 transition-colors
+                 duration-500 ease-in-out hover:!text-[#a6225b] border-b-3 border-transparent hover:border-[#a6225b]"
+                href="html/about.html"
+                >من نحن</a
+              >
             </li>
-            <li
-              class="text-center w-full md:w-fit text-main py-5 md:py-7 px-3 hover:font-bold border-b-3 border-transparent hover:border-[#a6225b] duration-300"
-            >
-              <a href="">الخدمات</a>
+            <li>
+              <a
+                class="text-center w-full md:w-fit text-slate-800 font-bold py-5 px-3 hover:!text-[#a6225b] hover:font-bold border-b-3 border-transparent hover:border-[#a6225b] duration-500"
+                href="html/services.html"
+                >الخدمات</a
+              >
             </li>
-            <li
-              class="text-center w-full md:w-fit text-main py-5 md:py-7 px-3 hover:font-bold border-b-3 border-transparent hover:border-[#a6225b] duration-300"
-            >
-              <a href="">تواصل معنا</a>
+            <li>
+              <a
+                class="text-center w-full md:w-fit text-slate-800 font-bold py-5 px-3 hover:!text-[#a6225b] hover:font-bold border-b-3 border-transparent hover:border-[#a6225b] duration-500"
+                href="html/contact.html"
+                >تواصل معنا</a
+              >
             </li>
           </ul>
         </div>
 
         <div class="flex items-center gap-2">
-          <div class="cursor-pointer menu-btn">
-            <i class="ti ti-language text-2xl text-white"></i>
+          <div class="cursor-pointer">
+            <i class="ti ti-language text-2xl text-main"></i>
           </div>
           <div
-            class="flex justify-center items-center w-[25px] h-[25px] text-main border block md:hidden"
+            class="menu-btn flex justify-center items-center w-[30px] h-[30px] text-main transition-colors duration-500 ease-in-out cursor-pointer border rounded-sm md:hidden"
           >
             <i class="ti ti-menu-2 text-lg md:text-2xl"></i>
           </div>
@@ -74,122 +90,1065 @@
     <!-- End Header -->
 
     <!-- Start Hero -->
-    <section class="h-[85vh] relative">
-      <div
-        class="container mx-auto px-3 md:px-0"
-      >
-      <div class="flex flex-col md:flex-row justify-between items-center gap-[20px] h-full py-32">
-        <div class="w-full md:w-1/2">
-          <h1 class="text-5xl">ابدأ بسؤال.. وافتح أبواب المعرفة</h1>
-          <p class="pt-5 text-lg">
-            السؤال هو أول خطوة نحو الفهم والتعلّم الحقيقي. في منصة ابدأ بسؤال،
-            نؤمن أن كل فكرة عظيمة تبدأ بسؤال بسيط. انضم إلينا، وكن جزءًا من
-            مجتمع يتشارك الأسئلة، وينمو بالإجابات.
-          </p>
-        </div>
-        <div>
-          <div class="pyramid-gyro">
-            <div class="pyramid-axis">
-              <div class="pyramid-wall front">
-                <div class="question">؟</div>
-              </div>
-              <div class="pyramid-wall back">
-                <div class="question">؟</div>
-              </div>
-              <div class="pyramid-wall left">
-                <div class="question">؟</div>
-              </div>
-              <div class="pyramid-wall right">
-                <div class="question">؟</div>
-              </div>
-
-              <div class="bottom"></div>
-              <div class="shadow"></div>
+    <section
+      class="h-screen overflow-hidden md:h-[90vh] bg-cover bg-[url('images/shape-bg.jpg')] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white/95 before:z-20"
+    >
+      <div class="absolute -left-15 top-0 w-[150px] z-10">
+        <img
+          src="images/bg-logo-removebg-preview.png"
+          class="max-w-full"
+          alt="icon"
+        />
+      </div>
+      <div class="absolute -right-15 bottom-10 w-[150px] z-10">
+        <img
+          src="images/bg-logo-removebg-preview.png"
+          class="max-w-full"
+          alt="icon"
+        />
+      </div>
+      <div class="container mx-auto">
+        <div
+          class="absolute px-3 md:px-0 w-full md:w-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30"
+        >
+          <div class="flex flex-col items-center justify-center text-center">
+            <div class="relative w-fit p-3 md:p-5 bg-[#fcf4ed] rounded-md">
+              <h1 class="text-slate-700 text-[22px] md:text-[55px]">
+                <div
+                  class="inline-flex w-[35px] md:w-[50px] h-[35px] md:h-[50px] bg-[#a6225b41] rounded-lg justify-center items-center me-2 md:me-5"
+                >
+                  <i class="ti ti-bulb text-xl md:text-4xl text-slate-800"></i>
+                </div>
+                <span class="text-main">ابدأ بسؤال</span> وافتح أبواب المعرفة
+              </h1>
+            </div>
+            <p class="py-5 md:py-10 text-sm md:text-lg">
+              السؤال هو أول خطوة نحو الفهم والتعلّم الحقيقي. في منصة ابدأ بسؤال،
+              نؤمن أن كل فكرة عظيمة تبدأ بسؤال بسيط. انضم إلينا، وكن جزءًا من
+              مجتمع يتشارك الأسئلة، وينمو بالإجابات.
+            </p>
+            <div class="flex items-center gap-5 my-5">
+              <a
+                href="#"
+                class="inline-block w-[120px] md:w-[150px] py-2 md:py-3 border border-slate-800 duration-300 rounded-sm hover:bg-slate-800 hover:text-[#F9D6B4]"
+              >
+                <i class="ti ti-phone text-sm md:text-lg me-2"></i>
+                تواصل معنا</a
+              >
+              <a
+                href="#"
+                class="inline-block w-[120px] md:w-[150px] py-2 md:py-3 bg-main text-alt duration-300 border border-transparent rounded-sm hover:!bg-transparent hover:!text-slate-800 hover:border-slate-800"
+              >
+                <i class="ti ti-tools text-sm md:text-lg me-2"></i>
+                خدماتنا
+              </a>
             </div>
           </div>
-        </div>
-      </div>
+         </div>
       </div>
     </section>
     <!-- End Hero -->
     <!-- Start About -->
-     <section class="py-16">
+    <section class="py-16 bg-white" id="about">
       <div class="container mx-auto px-3 md:px-0">
-        <div>
+        <div
+          class="pt-5 flex flex-col md:flex-row justify-between items-center md:gap-5"
+        >
+          <div class="relative flex-1 order-last md:order-first">
+            <div
+              class="absolute top-[100px] md:top-[100px] md:right-[150px] z-10 border-[10px] md:border-[20px] border-white rounded-md w-full md:w-[70%]"
+            >
+              <img
+                src="images/Consulting-1024x644.jpg"
+                alt="about"
+                class="w-full rounded-md overflow-hidden"
+                loading="lazy"
+              />
+            </div>
+
+            <div
+              class="h-full mt-[250px] md:me-[250px] border-[0px] border-white rounded-md z-10 relative w-[70%] md:w-1/2"
+            >
+              <img
+                src="images/Planning-for-New-Financial-Year.png"
+                alt="about"
+                class="w-full rounded-md overflow-hidden"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="flex-1">
+            <div class="mb-10">
+              <head>
+                <h1
+                  class="w-fit bg-[#a6225d1d] text-main text-sm font-bold px-5 py-1 rounded-md mb-3"
+                >
+                  من نحن؟
+                </h1>
+                <p class="text-slate-800 font-bold text-3xl">
+                  نحن إجابتك الأولى ونسعى أن نكون المنصة الأولى التي يلجأ إليها
+                  الطلاب والخريجين
+                </p>
+              </head>
+            </div>
+            <p class="text-slate-600 text-xl space-y-12">
+              <span class="text-main font-bold"> منصة ابدأ بسؤال </span>هي منصة
+              تدريب وتأهيل شبابية تهدف الى رفع الوعي وتطوير المهارات في مجتمع
+              الشباب مع تركيز خاص على الطلاب الجامعيين وحديثي التخرج تعمل المنصة
+              على سد الفجوة والنقص بين التعليم الجامعي والحياة المهنية حيث يفتقد
+              العديد من الخريجين الى المهارات الاساسية التي تعزز فرصهم في سوق
+              العمل.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+    <!-- Start Services -->
+    <section class="py-16 bg-sec relative overflow-hidden" id="services">
+      <div class="absolute -right-30 -top-20 w-[300px] z-10">
+        <img
+          src="images/bg-logo-removebg-preview.png"
+          class="max-w-full"
+          alt="icon"
+        />
+      </div>
+      <div class="container mx-auto px-5 md:px-0 mt-10 md:mt-0">
+        <head>
+          <div class="mx-auto md:w-1/2 text-center">
+            <h1
+              class="w-fit mx-auto bg-[#a6225d1d] text-main text-sm font-bold px-5 py-1 rounded-md mb-3"
+            >
+              افضل خدماتنا
+            </h1>
+            <p class="text-slate-800 font-bold md:text-3xl">
+              نحرص على تقديم تحليلات عميقة ونصائح استراتيجية تساعدك على
+              الاستعداد لمستقبل مسارك المهني.
+            </p>
+          </div>
+        </head>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16 gap-5"
+          data-s="fade-u"
+        >
+          <div
+            class="relative p-7 bg-white rounded-md duration-500 group hover:bg-[#a6225b]"
+          >
+            <i
+              class="ti ti-book text-xl p-3 bg-main text-white rounded-full duration-500 group-hover:!text-[#a6225b] group-hover:!bg-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleOne"
+              class="text-slate-800 text-xl font-semibold py-5 duration-500 group-hover:!text-white"
+            >
+              محتوى تعليمي
+            </h1>
+            <p
+              class="text-slate-600 mb-16 text-[15px] group-hover:!text-white duration-500"
+            >
+              مشاركة محتوى مكتوب ومرئي باستمرار عبر منصاتنا على وسائل التواصل
+              الاجتماعي، لتبسيط المعرفة للمستفيدين، مما يسهل عليهم فهم المفاهيم
+              الأساسية في مختلف المجالات.
+            </p>
+            <div
+              class="w-full absolute bottom-7 end-7 flex justify-end items-center mt-3 gap-2"
+            >
+              <div
+                class="h-[1px] w-1/4 bg-main duration-500 group-hover:!bg-white"
+              ></div>
+              <span
+                class="text-lg text-main duration-500 group-hover:!text-white"
+                >١</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative p-7 bg-white rounded-md duration-500 group hover:bg-[#a6225b]"
+          >
+            <i
+              class="ti ti-speakerphone text-xl p-3 bg-main text-white rounded-full duration-500 group-hover:!text-[#a6225b] group-hover:!bg-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleTwo"
+              class="text-slate-800 text-xl font-semibold py-5 duration-500 group-hover:!text-white"
+            >
+              احاديث رزان
+            </h1>
+            <p
+              class="text-slate-600 mb-16 text-[15px] group-hover:!text-white duration-500"
+            >
+              بودكاست يهدف إلى تمكين الشباب والطلاب والخريجين الجدد في مسيرتهم
+              المهنية، من خلال استكشاف مجموعة متنوعة من المواضيع المتعلقة
+              باختيار المسار، وتسليط الضوء على الطرق المناسبة للتأهيل، وتشجيع
+              المستمعين على اختيار مساراتهم.
+            </p>
+            <div
+              class="w-full absolute bottom-7 end-7 flex justify-end items-center mt-3 gap-2"
+            >
+              <div
+                class="h-[1px] w-1/4 bg-main duration-500 group-hover:!bg-white"
+              ></div>
+              <span
+                class="text-lg text-main duration-500 group-hover:!text-white"
+                >٢</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative p-7 bg-white rounded-md duration-500 group hover:bg-[#a6225b]"
+          >
+            <i
+              class="ti ti-school text-xl p-3 bg-main text-white rounded-full duration-500 group-hover:!text-[#a6225b] group-hover:!bg-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleThree"
+              class="text-slate-800 text-xl font-semibold py-5 duration-500 group-hover:!text-white"
+            >
+              دورات تدريبية
+            </h1>
+            <p
+              class="text-slate-600 mb-16 text-[15px] group-hover:!text-white duration-500"
+            >
+              نقدم دورات تدريبية دورية افتراضية عبر منصة "التلغرام"، تتميّز هذه
+              الدورات بتخصصها، وتهدف إلى تعميق الفهم وتعزيز الإدراك لأهم
+              المهارات المطلوبة في سوق العمل.
+            </p>
+            <div
+              class="w-full absolute bottom-7 end-7 flex justify-end items-center mt-3 gap-2"
+            >
+              <div
+                class="h-[1px] w-1/4 bg-main duration-500 group-hover:!bg-white"
+              ></div>
+              <span
+                class="text-lg text-main duration-500 group-hover:!text-white"
+                >٣</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative p-7 bg-white rounded-md duration-500 group hover:bg-[#a6225b]"
+          >
+            <i
+              class="ti ti-user-dollar text-xl p-3 bg-main text-white rounded-full duration-500 group-hover:!text-[#a6225b] group-hover:!bg-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleFour"
+              class="text-slate-800 text-xl font-semibold py-5 duration-500 group-hover:!text-white"
+            >
+              مستشارك المهني
+            </h1>
+            <p
+              class="text-slate-600 mb-16 text-[15px] group-hover:!text-white duration-500"
+            >
+              ندرك أهمية التوجيه والإرشاد في تطوير المسار الشخصي والمهني، ولذلك
+              يوفر برنامج "مستشارك المهني" جلسات استشارة مهنية افتراضية، يُمكن
+              للطلاب والخريجين الحصول من خلالها على إرشادات شخصية حول تخطيط
+              المسار المهني، كتابة السيرة الذاتية، والاستعداد للمقابلات،
+              بالإضافة إلى فهم متطلبات المسارات المهنية المختلفة.
+            </p>
+            <div
+              class="w-full absolute bottom-7 end-7 flex justify-end items-center mt-3 gap-2"
+            >
+              <div
+                class="h-[1px] w-1/4 bg-main duration-500 group-hover:!bg-white"
+              ></div>
+              <span
+                class="text-lg text-main duration-500 group-hover:!text-white"
+                >٤</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative p-7 bg-white rounded-md duration-500 group hover:bg-[#a6225b]"
+          >
+            <i
+              class="ti ti-device-laptop text-xl p-3 bg-main text-white rounded-full duration-500 group-hover:!text-[#a6225b] group-hover:!bg-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleFive"
+              class="text-slate-800 text-xl font-semibold py-5 duration-500 group-hover:!text-white"
+            >
+              فرص تدريب وتطوع افتراضية
+            </h1>
+            <p
+              class="text-slate-600 mb-16 text-[15px] group-hover:!text-white duration-500"
+            >
+              بالتعاون مع منظمات غير حكومية نقدّم فرص تطوع عن بُعد مثل: تطوير
+              المواقع الإلكترونية، جمع البيانات، إدارة وسائل التواصل الاجتماعي،
+              والتدريب عبر الإنترنت. نركّز على تسهيل التواصل بين المتطوعين
+              والمنظمات، ونعمل مستقبلاً على توفير فرص تدريب على أرض الواقع من
+              خلال منصتنا وبالشراكة مع منظمات غير حكومية.
+            </p>
+            <div
+              class="w-full absolute bottom-7 end-7 flex justify-end items-center mt-3 gap-2"
+            >
+              <div
+                class="h-[1px] w-1/4 bg-main duration-500 group-hover:!bg-white"
+              ></div>
+              <span
+                class="text-lg text-main duration-500 group-hover:!text-white"
+                >٥</span
+              >
+            </div>
+          </div>
+          <div
+            class="relative p-7 bg-white rounded-md duration-500 group hover:bg-[#a6225b]"
+          >
+            <i
+              class="ti ti-writing text-xl p-3 bg-main text-white rounded-full duration-500 group-hover:!text-[#a6225b] group-hover:!bg-white"
+            ></i>
+            <h1
+              lang="en"
+              data-key="servicesTitleOne"
+              class="text-slate-800 text-xl font-semibold py-5 duration-500 group-hover:!text-white"
+            >
+              التقديم للمنح
+            </h1>
+            <p
+              class="text-slate-600 mb-16 text-[15px] group-hover:!text-white duration-500"
+            >
+              نحن هنا لمساعدتك في زيادة فرص قبولك في المنح الدراسية من خلال
+              الخدمات التالية: للطلبة المستعدين:
+              <span>
+                تحسين المقالات الشخصية, تعزيز السيرة الذاتية, التحضير
+                للمقابلات</span
+              >
+            </p>
+            <div
+              class="w-full absolute bottom-7 end-7 flex justify-end items-center mt-3 gap-2"
+            >
+              <div
+                class="h-[1px] w-1/4 bg-main duration-500 group-hover:!bg-white"
+              ></div>
+              <span
+                class="text-lg text-main duration-500 group-hover:!text-white"
+                >٦</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+    <!-- Start Features -->
+    <!-- <section class="featuer py-16 px-3 md:px-0">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-10"
+      >
+        <section class="flex-1" data-aos="fade-bottom">
+          <head class="pb-5">
+            <h1
+              lang="en"
+              data-key="featureHead"
+              class="text-xl md:text-3xl text-emerald-700 font-bold mb-5"
+            >
+              ميزتنا الاساسية
+            </h1>
+            <p lang="en" data-key="featureDescription" class="text-slate-500">
+              We understand that each work is unique. We therefore offer you
+              customized consulting solutions based on a careful analysis of
+              your needs and goals. From growth strategies to improving internal
+              performance, we create plans that deliver tangible results for
+              you.
+            </p>
+          </head>
+          <div class="grid grid-cols-1 md:grid-cols-2 pt-5 gap-5">
+            <div
+              class="card bg-white shadow-md rounded-md relative p-5 text-center duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
+            >
+              <i
+                class="fa-solid fa-sitemap fa-2x text-emerald-600 duration-500 group-hover:text-white"
+              ></i>
+              <h1
+                lang="en"
+                data-key="featureOneHead"
+                class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
+              >
+                Organization
+              </h1>
+              <p
+                lang="en"
+                data-key="featureOneDesc"
+                class="text-slate-500 duration-500 group-hover:text-white"
+              >
+                Structuring activities, resources and people to achieve goals
+                efficiently
+              </p>
+            </div>
+            <div
+              class="card bg-white shadow-md rounded-md relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
+            >
+              <i
+                class="fa-solid fa-money-bill-trend-up fa-2x text-emerald-600 duration-500 group-hover:text-white"
+              ></i>
+              <h1
+                lang="en"
+                data-key="featureTwoHead"
+                class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
+              >
+                Marketing Strategy
+              </h1>
+              <p
+                lang="en"
+                data-key="featureTwoDesc"
+                class="text-slate-500 duration-500 group-hover:text-white"
+              >
+                Identify unique product values, and choose the right channels to
+                reach the audience
+              </p>
+            </div>
+            <div
+              class="card bg-white shadow-md rounded-md relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
+            >
+              <i
+                class="fa-solid fa-magnifying-glass-chart fa-2x text-emerald-600 duration-500 group-hover:text-white"
+              ></i>
+              <h1
+                lang="en"
+                data-key="featureThreeHead"
+                class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
+              >
+                Risk Analysis
+              </h1>
+              <p
+                lang="en"
+                data-key="featureThreeDesc"
+                class="text-slate-500 duration-500 group-hover:text-white"
+              >
+                Identify and assess potential risks that may affect the business
+              </p>
+            </div>
+            <div
+              class="card bg-white shadow-md rounded-md relative p-5 text-center bg-slate-100 duration-500 z-[10] group overflow-hidden hover:rounded-md before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-emerald-500 before:duration-500 before:-z-[10] hover:before:h-full"
+            >
+              <i
+                class="fa-solid fa-handshake fa-2x text-emerald-600 duration-500 group-hover:text-white"
+              ></i>
+              <h1
+                lang="en"
+                data-key="featureFourHead"
+                class="text-slate-700 text-xl font-bold py-5 duration-500 group-hover:text-white"
+              >
+                Capital Market
+              </h1>
+              <p
+                lang="en"
+                data-key="featureFourDesc"
+                class="text-slate-500 duration-500 group-hover:text-white"
+              >
+                Provide opportunities for investors to achieve returns on their
+                investments
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="flex-1 p-5 border-5 border-emerald-500/20 rounded-md duration-500 hover:bg-emerald-200"
+          data-aos="fade-top"
+        >
+          <picture class="w-full rounded-md overflow-hidden">
+            <img src="images/feature.jpeg" alt="featuer" class="max-w-full" />
+          </picture>
+          <div class="flex flex-col gap-3 pt-3">
+            <head>
+              <h1
+                lang="en"
+                data-key="storyTitle"
+                class="text-slate-700 font-bold md:text-lg"
+              >
+                Read Our Success Story for Inspiration
+              </h1>
+            </head>
+            <p
+              lang="en"
+              data-key="storyDesc"
+              class="text-slate-500 text-[12px] md:text-[16px]"
+            >
+              في عالم يتسم بالتغيرات السريعة والتطورات المستمرة، تبرز أهمية
+              المنصات التي تسهم في ربط المعرفة الأكاديمية بالتطبيقات العملية.
+              تلعب المنصات دورًا محوريًا في سد الفجوة بين التعليم وسوق العمل،
+              حيث تقدم مجموعة متنوعة من الخدمات التي تهدف إلى تمكين الأفراد
+              وتطوير مهاراتهم.
+            </p>
+          </div>
+        </section>
+      </div>
+    </section> -->
+    <!-- End Features -->
+    <!-- Start Vision -->
+    <section class="py-16 overflow-hidden">
+      <div class="container mx-auto px-3 md:px-0">
+        <div class="mb-10 text-center">
           <head>
-            <h1 class="text-2xl font-bold">من نحن؟ </h1>
-            <p class="text-slate-500">ببساطة، نحن إجابتك الأولى</p>
+            <div class="mx-auto md:w-1/2 text-center">
+              <h1
+                class="w-fit mx-auto bg-[#a6225d1d] text-main text-sm font-bold px-5 py-1 rounded-md mb-3"
+              >
+                رؤيتنا
+              </h1>
+              <p class="text-slate-800 font-bold md:text-3xl">
+                نؤمن أن كل شخص يملك فضولًا داخليًا يدفعه لفهم العالم من حوله،
+                وأن كل سؤال هو خطوة أولى نحو التطور.
+              </p>
+            </div>
           </head>
         </div>
-        <div class="flex"></div>
-      </div>
-     </section>
-    <!-- End About -->
 
-    <!-- Hero Steps Section -->
-<section id="steps" class="py-16 bg-white">
-  <div class="container mx-auto px-3 md:px-0">
-    <h2 class="text-3xl font-bold text-center mb-12">كيف نعمل؟</h2>
-
-    <div class="relative border-l-4 border-primary ml-5 md:ml-0 pl-6 space-y-12">
-
-      <!-- Step 1 -->
-      <div class="flex items-start gap-6" data-aos="fade-up">
-        <div class="absolute -left-12 top-0 text-primary text-3xl bg-white rounded-full shadow-md p-2">
-          <i class="bx bx-question-mark"></i>
+        <div class="py-12 grid grid-cols-1 md:grid-cols-3 gap-5 w-full">
+          <div class="relative z-10">
+            <div class="absolute -top-7 -right-7 h-20 w-20 bg-alt -z-1"></div>
+            <div class="p-3 md:p-10 bg-slate-800 z-40">
+              <h1 class="text-lg md:text-2xl text-alt font-bold">رسالتنا :</h1>
+              <p class="pt-3 text-slate-50">
+                تمكين الطلاب والخريجين والباحثين من الوصول إلى إجابات موثوقة
+                وواضحة لكل الأسئلة التي تدور في أذهانهم في الحياة الأكاديمية
+                والعملية، من خلال محتوى مبسّط، شامل، ومتاح للجميع ويهدف هذا
+                المحتوى إلى بناء مجتمع معرفي يُلهم البحث، ويعزّز فرص التعلم،
+                ويجسر الفجوة بين النظرية والتطبيق.
+              </p>
+            </div>
+          </div>
+          <div class="text-center flex flex-col gap-5 p-5">
+            <a
+              href="#"
+              class="mx-auto py-3 px-6 w-1/2 border border-slate-800 relative duration-300 hover:bg-slate-800 hover:text-[#F9D6B4]"
+              >تواصل معنا</a
+            >
+          </div>
+          <div class="relative z-10">
+            <div class="absolute -bottom-7 -left-7 h-20 w-20 border -z-1"></div>
+            <div class="p-3 md:p-10 bg-alt z-40">
+              <h1 class="text-lg md:text-2xl text-slate-800 font-bold">
+                رؤيتنا:
+              </h1>
+              <p class="pt-3 text-slate-600">
+                نسعى لأن نكون منصة رائدة في تمكين قدرات الشباب وحديثي التخرج. من
+                خلال تقديم خدمات تطوير وتدريب عملية وفعالة نهدف الى تزويدهم
+                بالادوات والمعرفة اللازمة لتعزيز مهاراتهم مما يمكنهم من النجاح
+                في بيئة العمل الديناميكية المتغيرة
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- End Vision -->
+    <!-- Start Statis -->
+    <section class="py-16 bg-sec">
+      <div
+        id="stats"
+        class="container mx-auto px-3 md:px-0 grid md:grid-cols-4 gap-16"
+      >
+        <div
+          class="text-center flex flex-col items-center gap-3 p-5 bg-main rounded-md relative"
+        >
+          <div
+            class="w-[60px] h-[60px] flex justify-center items-center rounded-full absolute -top-5 -end-5 bg-slate-700 border-[7px] border-amber-50"
+          >
+            <i class="ti ti-confetti text-white text-2xl"></i>
+          </div>
+          <h2 class="mt-5 text-alt text-lg md:text-[50px] font-bold">
+            +<span data-counter="1000000">0</span>
+          </h2>
+          <p class="text-alt text-md md:text-xl">متابعين</p>
+        </div>
+        <div
+          class="text-center flex flex-col items-center gap-3 p-5 bg-main rounded-md relative"
+        >
+          <div
+            class="w-[60px] h-[60px] flex justify-center items-center rounded-full absolute -top-5 -end-5 bg-slate-700 border-[7px] border-amber-50"
+          >
+            <i class="ti ti-clover text-white text-2xl"></i>
+          </div>
+          <h2 class="mt-5 text-alt text-lg md:text-[50px] font-bold">
+            +<span data-counter="50">0</span>
+          </h2>
+          <p class="text-alt text-md md:text-xl">استشارات شخصية</p>
+        </div>
+        <div
+          class="text-center flex flex-col items-center gap-3 p-5 bg-main rounded-md relative"
+        >
+          <div
+            class="w-[60px] h-[60px] flex justify-center items-center rounded-full absolute -top-5 -end-5 bg-slate-700 border-[7px] border-amber-50"
+          >
+            <i class="ti ti-microphone text-white text-2xl"></i>
+          </div>
+          <h2 class="mt-5 text-alt text-lg md:text-[50px] font-bold">
+            <span data-counter="10">0</span>
+          </h2>
+          <p class="text-alt text-md md:text-xl">بث مباشر</p>
+        </div>
+        <div
+          class="text-center flex flex-col items-center gap-3 p-5 bg-main rounded-md relative"
+        >
+        <div
+            class="w-[60px] h-[60px] flex justify-center items-center rounded-full absolute -top-5 -end-5 bg-slate-700 border-[7px] border-amber-50"
+          >
+          <i class="ti ti-article text-white text-2xl"></i>
+          </div>
+          <h2 class="text-alt text-lg md:text-[50px] font-bold">
+            +<span data-counter="35">0</span>
+          </h2>
+          <p class="text-alt text-md md:text-xl">منشور</p>
+        </div>
+      </div>
+    </section>
+    <!-- End Statis -->
+    <!-- Start Quotes -->
+    <section
+      class="h-[60vh] overflow-hidden bg-cover bg-fixed bg-[url('https://th.bing.com/th/id/R.4350fb92d15d57dd7267f7ff976f5454?rik=yDIpQ6tJaflyBQ&pid=ImgRaw&r=0')] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-slate-800/80 before:z-10"
+    >
+      <div
+        class="text-center w-full md:w-1/2 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-20"
+      >
+        <i class="ti ti-quote text-5xl text-alt"></i>
+        <h2 class="text-white text-lg md:text-3xl my-5">
+          الحياة معتدلة تماماً لا هي لونها وردي وفراشات وربيع طول السنة ولا هي
+          بسواد السكن وظلام الليل طول الوقت.. في نهار وليل وفي فرح وحزن ..
+        </h2>
+        <p class="md:text-lg text-alt">"د.رزان الحارث"</p>
+      </div>
+    </section>
+    <!-- End Qoutes -->
+    <!-- Start Fields -->
+    <section class="py-16 ">
+      <div class="container mx-auto px-3 md:px-0">
+        <div class="mb-10">
+          <head>
+            <div class="md:w-1/2">
+              <h1
+                class="w-fit bg-[#a6225d1d] text-main text-sm font-bold px-5 py-1 rounded-md mb-3"
+              >
+                مجالاتنا
+              </h1>
+              <p class="text-slate-800 font-bold md:text-3xl">
+                نرى أن مجالات العمل ليست مجرد تخصصات، وأن استكشاف هذه المجالات
+                هو طريق لاكتشاف الذات والمساهمة في صناعة المستقبل.
+              </p>
+            </div>
+          </head>
+        </div>
+
+        <div class="py-12 relative flex flex-col items-center gap-5 w-full">
+          <div
+            class="absolute left-1/2 top-0 h-full w-[1px] bg-main -translate-x-1/2"
+          ></div>
+
+          <div
+            class="flex ltr:justify-start rtl:justify-end w-full max-w-4xl z-1"
+          >
+            <div class="md:w-1/2 md:ltr:pl-6 md:rtl:pr-6">
+              <div
+                class="p-4 bg-rose-50 rounded-md transform transition-all duration-500 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row items-center gap-5 text-center md:text-start"
+              >
+                <i class="px-2 text-main ti ti-mood-smile-beam text-[30px]"></i>
+                <div>
+                  <h1 class="text-xl font-bold">المهارات الناعمة</h1>
+                  <p class="py-3 text-[15px] text-slate-700">
+                    نهدف إلى سد الفجوة التي تتركها الجامعات في توفير المهارات
+                    الناعمة. نحن نركز على أهمية المهارات مثل التواصل الفعّال
+                    والقيادة، حيث تلعب دورًا حيويًا في نجاح الأفراد في بيئات
+                    العمل المتغيرة. من خلال برامجنا، نساعد الشباب على تطوير هذه
+                    المهارات بشكل فعّال.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex ltr:justify-end rtl:justify-start w-full max-w-4xl z-1"
+          >
+            <div class="md:w-1/2 md:ltr:pr-6 md:rtl:pl-6">
+              <div
+                class="p-4 bg-rose-50 rounded-md transform transition-all duration-500 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row items-center gap-5 text-center md:text-start"
+              >
+                <i class="px-2 text-main ti ti-briefcase text-[30px]"></i>
+                <div>
+                  <h1 class="text-xl font-bold">الادارة</h1>
+                  <p class="py-3 text-[15px] text-slate-700">
+                    نولي اهتمامًا كبيرًا بتطوير مهارات الإدارة، حيث نساعد
+                    الأفراد على تعزيز مهاراتهم القيادية وإدارة الفرق بفعالية.
+                    تزداد أهمية مهارات الإدارة في المؤسسات، وتُعتبر أولوية
+                    مطلوبة في جميع الوصف الوظيفي.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex ltr:justify-start rtl:justify-end w-full max-w-4xl z-1"
+          >
+            <div class="md:w-1/2 md:ltr:pl-6 md:rtl:pr-6">
+              <div
+                class="p-4 bg-rose-50 rounded-md transform transition-all duration-500 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row items-center gap-5 text-center md:text-start"
+              >
+                <i class="px-2 text-main ti ti-chart-bar text-[30px]"></i>
+                <div>
+                  <h1 class="text-xl font-bold">تحليل البيانات</h1>
+                  <p class="py-3 text-[15px] text-slate-700">
+                    أصبح تحليل البيانات عنصرًا أساسيًا في سوق العمل، حيث يساعد
+                    الأفراد على اتخاذ قرارات مبنية على معلومات دقيقة. يعد هذا
+                    المجال ضروريًا في عملية التطوير المهني لضمان تحقيق أفضل
+                    النتائج في الأداء الوظيفي.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex ltr:justify-end rtl:justify-start w-full max-w-4xl z-1"
+          >
+            <div class="md:w-1/2 md:ltr:pr-6 md:rtl:pl-6">
+              <div
+                class="p-4 bg-rose-50 rounded-md transform transition-all duration-500 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row items-center gap-5 text-center md:text-start"
+              >
+                <i class="px-2 text-main ti ti-code text-[30px]"></i>
+                <div>
+                  <h1 class="text-xl font-bold">المجالات التقنية</h1>
+                  <p class="py-3 text-[15px] text-slate-700">
+                    مع تطور العلم والتكنولوجيا، أصبحت المهارات الرقمية والتقنية
+                    ضرورية. نحن نركز على تعليم المهارات مثل أدوات الذكاء
+                    الاصطناعي، تحليل المشاريع، والبرمجة، مما يسهم في تأهيل
+                    الشباب لسوق العمل الحديث.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex ltr:justify-start rtl:justify-end w-full max-w-4xl z-1"
+          >
+            <div class="md:w-1/2 md:ltr:pl-6 md:rtl:pr-6">
+              <div
+                class="p-4 bg-rose-50 rounded-md transform transition-all duration-500 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row items-center gap-5 text-center md:text-start"
+              >
+                <i class="px-2 text-main ti ti-rocket text-[30px]"></i>
+                <div>
+                  <h1 class="text-xl font-bold">ريادة الاعمال</h1>
+                  <p class="py-3 text-[15px] text-slate-700">
+                    ندعم رواد الأعمال من خلال توفير المعرفة والموارد اللازمة
+                    لتطوير أفكارهم. ندرك أن العديد من الرواد يفتقرون إلى التوجيه
+                    والإرشاد لتحقيق أهدافهم، وهذا ما نسعى لتقديمه عبر منصتنا.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Fields -->
+     <!-- Start Consultation Section -->
+    <section
+      class="py-16 relative overflow-hidden bg-sec"
+      id="consultation"
+    >
+      <div class="container mx-auto px-5 md:px-0">
+        <!-- Title -->
+        <div class="mx-auto md:w-1/2 text-center mb-10">
+          <h1
+            class="w-fit mx-auto bg-[#a6225d1d] text-main text-sm font-bold px-5 py-1 rounded-md mb-3"
+          >
+            استشر فريقنا
+          </h1>
+          <p class="text-slate-800 font-bold md:text-3xl leading-relaxed">
+            نحن هنا لدعمك! ارسل استشارتك وسيتواصل معك فريقنا المتخصص لمساعدتك في
+            إيجاد الحلول.
+          </p>
+        </div>
+
+        <!-- Form -->
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-md">
+          <form action="#" method="POST" class="space-y-6">
+            <!-- Name -->
+            <div>
+              <label
+                for="name"
+                class="block font-bold text-slate-700 mb-2"
+              >
+                الاسم الكامل
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="اكتب اسمك"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-[#a6225b] focus:ring-1 focus:outline-none"
+                required
+              />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label
+                for="email"
+                class="block font-bold text-slate-700 mb-2"
+              >
+                البريد الإلكتروني
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@mail.com"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-[#a6225b] focus:ring-1 focus:outline-none"
+                required
+              />
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label
+                for="message"
+                class="block font-bold text-slate-700 mb-2"
+              >
+                الاستشارة
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="اكتب استشارتك هنا..."
+                class="w-full resize-none border border-gray-300 rounded-lg px-4 py-2 focus:ring-[#a6225b] focus:ring-1 focus:outline-none"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+              <button
+                type="submit"
+                class="bg-main text-white px-6 py-3 rounded-lg font-medium cursor-pointer hover:!bg-pink-700 transition flex items-center justify-center gap-2 mx-auto"
+              >
+                <i class="bx bx-send text-lg"></i>
+                <span>إرسال الاستشارة</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="absolute -left-30 -bottom-20 w-[300px] z-10">
+        <img
+          src="../images/bg-logo-removebg-preview.png"
+          class="max-w-full"
+          alt="icon"
+        />
+      </div>
+    </section>
+    <!-- End Consultation Section -->
+
+    <!-- Start Footer -->
+    <footer class="bg-[#fcf4ed] text-slate-800 pt-10">
+      <div
+        class="container mx-auto px-3 md:px-0 pb-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10"
+      >
+        <!-- Logo + About -->
+        <div class="col-span-1">
+          <img src="images/logo.png" alt="ابدأ بسؤال" class="w-24 mb-4" />
+          <p class="text-sm leading-relaxed">
+            منصة تهدف إلى تبسيط المعرفة، وتحفيز التفكير، وتمكين الشباب من خلال
+            مشاركة المحتوى والإرشاد العملي.
+          </p>
+        </div>
+
+        <!-- روابط سريعة -->
         <div>
-          <h4 class="text-xl font-semibold mb-1">نستقبل سؤالك</h4>
-          <p class="text-gray-600">يمكن لأي طالب أو مهتم أن يرسل سؤاله في أي وقت.</p>
+          <h3 class="text-lg font-semibold mb-3">روابط مهمة</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a
+                href="#"
+                class="relative inline-block text-slate-800 transition-colors duration-300 hover:text-[#a6225b] before:absolute before:bottom-0 before:start-0 before:h-[2px] before:w-0 before:bg-[#a6225b] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                الرئيسية
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative inline-block text-slate-800 transition-colors duration-300 hover:text-[#a6225b] before:absolute before:bottom-0 before:start-0 before:h-[2px] before:w-0 before:bg-[#a6225b] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                من نحن
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative inline-block text-slate-800 transition-colors duration-300 hover:text-[#a6225b] before:absolute before:bottom-0 before:start-0 before:h-[2px] before:w-0 before:bg-[#a6225b] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                خدماتنا
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative inline-block text-slate-800 transition-colors duration-300 hover:text-[#a6225b] before:absolute before:bottom-0 before:start-0 before:h-[2px] before:w-0 before:bg-[#a6225b] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                التواصل
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
 
-      <!-- Step 2 -->
-      <div class="flex items-start gap-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="absolute -left-12 top-1 text-primary text-3xl bg-white rounded-full shadow-md p-2">
-          <i class="bx bx-search-alt"></i>
-        </div>
+        <!-- خدماتنا -->
         <div>
-          <h4 class="text-xl font-semibold mb-1">نبحث عن إجابة دقيقة</h4>
-          <p class="text-gray-600">يقوم الفريق المتخصص بمراجعة السؤال وتقديم الإجابة الصحيحة والمبسطة.</p>
+          <h3 class="text-lg font-semibold mb-3">خدماتنا</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-main">جلسات استشارية</a></li>
+            <li><a href="#" class="hover:text-main">بودكاست مسارك</a></li>
+            <li><a href="#" class="hover:text-main">فرص تطوعية</a></li>
+            <li><a href="#" class="hover:text-main">دورات تدريبية</a></li>
+          </ul>
         </div>
-      </div>
 
-      <!-- Step 3 -->
-      <div class="flex items-start gap-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="absolute -left-12 top-1 text-primary text-3xl bg-white rounded-full shadow-md p-2">
-          <i class="bx bx-message-dots"></i>
-        </div>
+        <!-- تواصل معنا -->
         <div>
-          <h4 class="text-xl font-semibold mb-1">نرد عليك</h4>
-          <p class="text-gray-600">يتم إرسال الرد إليك مباشرة أو نشره ليستفيد الجميع.</p>
+          <h3 class="text-lg font-semibold mb-3">تواصل معنا</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <i class="ti ti-phone ms-5"></i> <span>+249 150 124 8489 </span>
+            </li>
+            <li>abda_b_soual@org.edu <i class="ti ti-mail me-1"></i></li>
+            <li><i class="ti ti-map-pin me-1"></i> السودان - الخرطوم</li>
+          </ul>
         </div>
       </div>
 
-      <!-- Step 4 -->
-      <div class="flex items-start gap-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="absolute -left-12 top-1 text-primary text-3xl bg-white rounded-full shadow-md p-2">
-          <i class="bx bx-group"></i>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold mb-1">نبني مجتمع فضولي</h4>
-          <p class="text-gray-600">كل سؤال يسهم في بناء منصة معرفية مفتوحة للجميع.</p>
-        </div>
+      <!-- Bottom -->
+      <div class="text-slate-800 bg-alt mt-10 py-5 text-center text-sm">
+        © 2025 ابدأ بسؤال. جميع الحقوق محفوظة.
       </div>
+    </footer>
 
-    </div>
-  </div>
-</section>
+    <!-- End Footer -->
+     <scrip src="js/main.js"></script>
+      <script>
+        // AOS.init();
 
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+window.addEventListener("scroll", () => {
+  let current = "";
 
-    <script>
-      AOS.init();
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 60; // عشان الهيدر
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
 
-      const btn = document.querySelector(".menu-btn");
-      btn.onclick = () => console.log("bien");
-      console.log(btn);
-    </script>
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
+
+let show = false;
+const btn = document.querySelector(".menu-btn");
+const menu = document.querySelector("nav ul");
+
+btn.onclick = () => {
+  show = !show;
+
+  if (show) {
+    menu.classList.remove(
+      "opacity-0",
+      "scale-95",
+      "translate-y-4",
+      "pointer-events-none"
+    );
+    menu.classList.add(
+      "opacity-100",
+      "scale-100",
+      "translate-y-0",
+      "pointer-events-auto"
+    );
+
+    btn.classList.remove("!bg-transparent", "!text-main");
+    btn.classList.add("!bg-slate-800", "!text-white");
+  } else {
+    menu.classList.remove(
+      "opacity-100",
+      "scale-100",
+      "translate-y-0",
+      "pointer-events-auto"
+    );
+    menu.classList.add(
+      "opacity-0",
+      "scale-95",
+      "translate-y-4",
+      "pointer-events-none"
+    );
+
+    btn.classList.remove("!bg-slate-800", "!text-white");
+    btn.classList.add("!bg-transparent", "!text-main");
+  }
+};
+
+const counters = document.querySelectorAll("[data-counter]");
+let hasCounted = false;
+
+const startCounting = () => {
+  counters.forEach((counter) => {
+    const target = +counter.dataset.counter;
+    let count = 0;
+
+    const isMillion = target >= 1000000;
+    const step = Math.ceil(target / 200); // عد ناعم
+
+    const interval = setInterval(() => {
+      count += step;
+      if (count >= target) {
+        count = target;
+        clearInterval(interval);
+      }
+
+      // التنسيق
+      if (isMillion) {
+        counter.innerText = count >= 1000000 ? "1M" : `${count}`;
+      } else {
+        counter.innerText = count;
+      }
+    }, 30);
+  });
+};
+
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && !hasCounted) {
+        startCounting();
+        hasCounted = true;
+        observer.disconnect();
+      }
+    });
+  },
+  {
+    threshold: 0.4,
+  }
+);
+
+// نراقب العنصر الرئيسي
+const grid = document.querySelector("#stats");
+if (grid) observer.observe(grid);
+
+      </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    
   </body>
 </html>

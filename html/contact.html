@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تواصل معنا</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Box Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.35.0/tabler-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="bg-alt sticky top-0 shadow-md z-[50]">
+      <nav
+        class="container mx-auto px-3 md:px-0 flex justify-between items-center"
+      >
+        <a href="../index.html" class="w-[80px] md:w-[100px] outline-none">
+          <img src="../images/logo.png" class="max-w-full" loading="lazy" />
+        </a>
+
+        <div class="flex items-center">
+          <ul
+            class="transition-all duration-300 ease-in-out opacity-0 md:!opacity-100 scale-95 md:!scale-100 translate-y-4 md:!translate-y-0 md:!flex flex-1 flex-col md:flex-row md:justify-between items-center gap-[30px] md:gap-5 absolute md:relative top-full md:top-0 left-0 bg-amber-50 w-full h-screen md:h-0"
+          >
+            <li>
+              <a
+                href="../index.html"
+                class="text-center w-full md:w-fit text-slate-800 font-bold py-5 px-3 transition-colors duration-500 ease-in-out hover:!text-[#a6225b] border-b-3 border-transparent hover:border-[#a6225b]"
+                >الرئيسية</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-center w-full md:w-fit text-slate-800 font-bold py-5 px-3 hover:!text-[#a6225b] hover:font-bold border-b-3 border-transparent hover:border-[#a6225b] duration-500"
+                href="about.html"
+                >من نحن</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-center w-full md:w-fit text-slate-800 font-bold py-5 px-3 hover:!text-[#a6225b] hover:font-bold
+                 border-b-3 border-transparent hover:border-[#a6225b] duration-500"
+                href="services.html"
+                >الخدمات</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-center w-full md:w-fit text-main py-5 px-3 font-bold border-b-3"
+                href="contact.html"
+                >تواصل معنا</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <div class="cursor-pointer">
+            <i class="ti ti-language text-2xl text-main"></i>
+          </div>
+          <div
+            class="menu-btn flex justify-center items-center w-[30px] h-[30px] text-main transition-colors duration-500 ease-in-out cursor-pointer border rounded-sm md:hidden"
+          >
+            <i class="ti ti-menu-2 text-lg md:text-2xl"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb -->
+    <section
+      class="h-[30vh] md:h-[40vh] bg-cover bg-center bg-[url('../images/shape-bg.jpg')] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white/95 before:z-10 flex items-center justify-center"
+    >
+      <div class="container mx-auto relative z-20 text-center px-3">
+        <header>
+          <h1 class="text-5xl md:text-4xl font-extrabold text-slate-800 mb-3">
+            تواصل معنا
+          </h1>
+        </header>
+        <nav class="flex justify-center items-center gap-2 text-md font-medium">
+          <a
+            href="../index.html"
+            class="text-slate-700 hover:text-[#a6225b] transition-colors"
+            >الرئيسية</a
+          >
+          <span class="text-slate-500">/</span>
+          <span class="text-[#a6225b]">التواصل</span>
+        </nav>
+      </div>
+    </section>
+    <!-- End Breadcrumb -->
+
+    <!-- Start FAQ -->
+<section class="py-16 bg-sec" id="faq">
+  <div class="container mx-auto px-5 md:px-0">
+    <div class="mb-10 text-center">
+      <h1
+        class="w-fit mx-auto bg-[#a6225d1d] text-main text-sm font-bold px-5 py-1 rounded-md mb-3"
+      >
+        الأسئلة الشائعة
+      </h1>
+      <p class="text-slate-800 font-bold md:text-3xl">
+        إجابات على أكثر الأسئلة تكرارًا
+      </p>
+    </div>
+
+    <div class="max-w-3xl mx-auto space-y-4">
+      <!-- Q1 -->
+      <details
+        class="group border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+      >
+        <summary
+          class="flex justify-between items-center cursor-pointer font-semibold text-slate-800"
+        >
+          ما هي مدة الاستشارة؟
+          <span class="transition-transform group-open:rotate-180">
+            <i class="bx bx-chevron-down text-2xl text-main"></i>
+          </span>
+        </summary>
+        <p class="mt-3 text-slate-600 leading-relaxed bg-[#a6225b10] p-3 rounded-md">
+          مدة الاستشارة عادةً تتراوح بين 30 إلى 60 دقيقة، حسب طبيعة الموضوع
+          ومقدار التفاصيل المطلوبة.
+        </p>
+      </details>
+
+      <!-- Q2 -->
+      <details
+        class="group border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+      >
+        <summary
+          class="flex justify-between items-center cursor-pointer font-semibold text-slate-800"
+        >
+          هل الاستشارة مجانية؟
+          <span class="transition-transform group-open:rotate-180">
+            <i class="bx bx-chevron-down text-2xl text-main"></i>
+          </span>
+        </summary>
+        <p class="mt-3 text-slate-600 leading-relaxed bg-[#a6225b10] p-3 rounded-md">
+          بعض الاستشارات تكون مجانية للتوجيه الأولي، بينما الاستشارات
+          المتخصصة قد تكون برسوم رمزية تُحدد مسبقًا.
+        </p>
+      </details>
+
+      <!-- Q3 -->
+      <details
+        class="group border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+      >
+        <summary
+          class="flex justify-between items-center cursor-pointer font-semibold text-slate-800"
+        >
+          كيف يمكنني استلام الرد على استشارتي؟
+          <span class="transition-transform group-open:rotate-180">
+            <i class="bx bx-chevron-down text-2xl text-main"></i>
+          </span>
+        </summary>
+        <p class="mt-3 text-slate-600 leading-relaxed bg-[#a6225b10] p-3 rounded-md">
+          بعد إرسال الاستشارة عبر النموذج، سيتم التواصل معك عبر البريد
+          الإلكتروني خلال 48 ساعة.
+        </p>
+      </details>
+
+      <!-- Q4 -->
+      <details
+        class="group border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+      >
+        <summary
+          class="flex justify-between items-center cursor-pointer font-semibold text-slate-800"
+        >
+          هل يمكنني طلب استشارة أكثر من مرة؟
+          <span class="transition-transform group-open:rotate-180">
+            <i class="bx bx-chevron-down text-2xl text-main"></i>
+          </span>
+        </summary>
+        <p class="mt-3 text-slate-600 leading-relaxed bg-[#a6225b10] p-3 rounded-md">
+          نعم، يمكنك إرسال أكثر من استشارة في أي وقت، وسيتم الرد عليك بكل
+          سرية واهتمام.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+<!-- End FAQ -->
+<!-- Start Contact -->
+    <section class="py-16" id="contact">
+      <div class="container mx-auto px-3 md:px-0">
+        <div class="mb-10 text-center">
+          <head>
+            <div class="mx-auto md:w-1/2 text-center">
+              <h1
+                class="w-fit mx-auto bg-[#a6225d1d] text-main text-sm font-bold px-5 py-1 rounded-md mb-3"
+              >
+                تواصل معنا
+              </h1>
+              <p class="text-slate-800 font-bold md:text-3xl">
+                كن على تواصل مباشر مع فريقنا لاخذ الاستشارات وكل ما يدور في ذهنك حول ابدأ بسؤال
+              </p>
+            </div>
+          </head>
+        </div>
+        <div class="flex justify-between flex-col md:flex-row gap-5">
+          <div class="md:w-[40%] h-1/2 flex flex-col gap-5 p-7 rounded-md bg-sec">
+            <i class="ti ti-message text-2xl w-fit text-main p-3 bg-[#a6225b60] rounded "></i>
+            <div>
+              <h3>يمكنك ايضا التواصل عبر البريد الالكتروني التالي :</h3>
+              <a href="#">abda_bsoual@edu.org</a>
+            </div>
+          </div>
+          
+          <form action="" class="md:w-[60%] flex flex-col gap-5 p-7 rounded-md bg-sec">
+            <div>
+              <label for="name" class="text-slate-700 block pb-2">الاسم</label>
+              <input type="text" name="" id="" class="bg-white w-full px-3 py-2 outline-none border border-slate-200 rounded-md">
+            </div>
+            <div>
+              <label for="name" class="text-slate-700 block pb-2">البريد الالكتروني</label>
+              <input type="text" name="" id="" class="bg-white w-full px-3 py-2 outline-none border border-slate-200 rounded-md">
+            </div>
+            <div>
+              <label for="name" class="text-slate-700 block pb-2">اكتب ما يدور في ذهنك</label>
+              <textarea name="" id="" class="h-[200px] bg-white w-full px-3 py-2 outline-none border border-slate-200 rounded-md resize-none"></textarea>
+            </div>
+            <button class="py-2 px-6 w-1/6 border border-slate-800 relative duration-300 rounded-md cursor-pointer hover:bg-slate-800 hover:text-[#F9D6B4]">ارسال</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Start Footer -->
+    <footer class="bg-[#fcf4ed] text-slate-800 pt-10">
+      <div
+        class="container mx-auto px-3 md:px-0 pb-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10"
+      >
+        <!-- Logo + About -->
+        <div class="col-span-1">
+          <img src="../images/logo.png" alt="ابدأ بسؤال" class="w-24 mb-4" />
+          <p class="text-sm leading-relaxed">
+            منصة تهدف إلى تبسيط المعرفة، وتحفيز التفكير، وتمكين الشباب من خلال
+            مشاركة المحتوى والإرشاد العملي.
+          </p>
+        </div>
+
+        <!-- روابط سريعة -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">روابط مهمة</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a
+                href="#"
+                class="relative inline-block text-slate-800 transition-colors duration-300 hover:text-[#a6225b] before:absolute before:bottom-0 before:start-0 before:h-[2px] before:w-0 before:bg-[#a6225b] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                الرئيسية
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative inline-block text-slate-800 transition-colors duration-300 hover:text-[#a6225b] before:absolute before:bottom-0 before:start-0 before:h-[2px] before:w-0 before:bg-[#a6225b] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                من نحن
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative inline-block text-slate-800 transition-colors duration-300 hover:text-[#a6225b] before:absolute before:bottom-0 before:start-0 before:h-[2px] before:w-0 before:bg-[#a6225b] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                خدماتنا
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative inline-block text-slate-800 transition-colors duration-300 hover:text-[#a6225b] before:absolute before:bottom-0 before:start-0 before:h-[2px] before:w-0 before:bg-[#a6225b] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                التواصل
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- خدماتنا -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">خدماتنا</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-main">جلسات استشارية</a></li>
+            <li><a href="#" class="hover:text-main">بودكاست مسارك</a></li>
+            <li><a href="#" class="hover:text-main">فرص تطوعية</a></li>
+            <li><a href="#" class="hover:text-main">دورات تدريبية</a></li>
+          </ul>
+        </div>
+
+        <!-- تواصل معنا -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">تواصل معنا</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <i class="ti ti-phone ms-5"></i> <span>+249 150 124 8489 </span>
+            </li>
+            <li>abda_b_soual@org.edu <i class="ti ti-mail me-1"></i></li>
+            <li><i class="ti ti-map-pin me-1"></i> السودان - الخرطوم</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="text-slate-800 bg-alt mt-10 py-5 text-center text-sm">
+        © 2025 ابدأ بسؤال. جميع الحقوق محفوظة.
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

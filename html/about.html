@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>من نحن</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Box Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.35.0/tabler-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="bg-alt sticky top-0 shadow-md z-[50]">
+      <nav
+        class="container mx-auto px-3 md:px-0 flex justify-between items-center"
+      >
+        <a href="../index.html" class="w-[80px] md:w-[100px] outline-none">
+          <img src="../images/logo.png" class="max-w-full" loading="lazy" />
+        </a>
+
+        <div class="flex items-center">
+          <ul
+            class="transition-all duration-300 ease-in-out opacity-0 md:!opacity-100 scale-95 md:!scale-100 translate-y-4 md:!translate-y-0 md:!flex flex-1 flex-col md:flex-row md:justify-between items-center gap-[30px] md:gap-5 absolute md:relative top-full md:top-0 left-0 bg-amber-50 w-full h-screen md:h-0"
+          >
+            <li class="">
+              <a
+                href="../index.html"
+                class="text-center w-full md:w-fit text-slate-800 font-bold py-5 px-3 transition-colors duration-500 ease-in-out hover:!text-[#a6225b] border-b-3 border-transparent hover:border-[#a6225b]"
+                >الرئيسية</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-center w-full md:w-fit text-main py-5 px-3 font-bold border-b-3"
+                href="about.html"
+                >من نحن</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-center w-full md:w-fit text-slate-800 font-bold py-5 px-3 hover:!text-[#a6225b] hover:font-bold border-b-3 border-transparent hover:border-[#a6225b] duration-500"
+                href="services.html"
+                >الخدمات</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-center w-full md:w-fit text-slate-800 font-bold py-5 px-3 hover:!text-[#a6225b] hover:font-bold border-b-3 border-transparent hover:border-[#a6225b] duration-500"
+                href="contact.html"
+                >تواصل معنا</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <div class="cursor-pointer">
+            <i class="ti ti-language text-2xl text-main"></i>
+          </div>
+          <div
+            class="menu-btn flex justify-center items-center w-[30px] h-[30px] text-main transition-colors duration-500 ease-in-out cursor-pointer border rounded-sm md:hidden"
+          >
+            <i class="ti ti-menu-2 text-lg md:text-2xl"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb -->
+    <section
+      class="h-[30vh] md:h-[40vh] bg-cover bg-center bg-[url('../images/shape-bg.jpg')] relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white/95 before:z-10 flex items-center justify-center"
+    >
+      <div class="container mx-auto relative z-20 text-center px-3">
+        <header>
+          <h1 class="text-5xl md:text-4xl font-extrabold text-slate-800 mb-3">
+            من نحن
+          </h1>
+        </header>
+        <nav class="flex justify-center items-center gap-2 text-md font-medium">
+          <a
+            href="../index.html"
+            class="text-slate-700 hover:text-[#a6225b] transition-colors"
+            >الرئيسية</a
+          >
+          <span class="text-slate-500">/</span>
+          <span class="text-[#a6225b]">من نحن</span>
+        </nav>
+      </div>
+    </section>
+    <!-- End Breadcrumb -->
+
+    <!-- Start About -->
+    <section class="py-16 bg-sec" id="about">
+      <div class="container mx-auto px-3 md:px-0">
+        <div
+          class="pt-5 flex flex-col md:flex-row justify-between items-center md:gap-5"
+        >
+          <div class="relative flex-1 order-last md:order-first">
+            <div
+              class="absolute top-[100px] md:top-[100px] md:right-[150px] z-10 rounded-md w-full md:w-[70%]"
+            >
+              <img
+                src="../images/Consulting-1024x644.jpg"
+                alt="about"
+                class="w-full rounded-md overflow-hidden"
+                loading="lazy"
+              />
+            </div>
+
+            <div
+              class="h-full mt-[200px] md:me-[200px] md:border-[20px] border-[#fffbf7] rounded-md z-10 relative w-[70%] md:w-1/2"
+            >
+              <img
+                src="../images/Planning-for-New-Financial-Year.png"
+                alt="about"
+                class="w-full rounded-md overflow-hidden"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="flex-1">
+            <div class="mb-10">
+              <head>
+                <h1
+                  class="w-fit bg-[#a6225d1d] text-main text-sm font-bold px-5 py-1 rounded-md mb-3"
+                >
+                  من نحن؟
+                </h1>
+                <p class="text-slate-800 font-bold text-3xl">
+                  نحن إجابتك الأولى ونسعى أن نكون المنصة الأولى التي يلجأ إليها
+                  الطلاب والخريجين
+                </p>
+              </head>
+            </div>
+            <p class="text-slate-600 text-xl space-y-12">
+              <span class="text-main font-bold"> منصة ابدأ بسؤال </span>هي منصة
+              تدريب وتأهيل شبابية تهدف الى رفع الوعي وتطوير المهارات في مجتمع
+              الشباب مع تركيز خاص على الطلاب الجامعيين وحديثي التخرج تعمل المنصة
+              على سد الفجوة والنقص بين التعليم الجامعي والحياة المهنية حيث يفتقد
+              العديد من الخريجين الى المهارات الاساسية التي تعزز فرصهم في سوق
+              العمل.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="py-10 flex flex-col md:flex-row justify-between items-center md:gap-5"
+        >
+          <div class="flex-1">
+            <p class="text-slate-600 text-xl space-y-12">
+              تقدّم المنصّة برامج عملية، وورش تدريبية، وجلسات إرشاد موجّهة تساعد
+              الشباب على اكتساب الخبرات المطلوبة، وبناء مسارات مهنية واضحة
+              تمكّنهم من المنافسة بفعالية، وتحقيق أثر إيجابي في مجتمعاتهم. كما
+              تسعى المنصّة إلى خلق مجتمع تعلّم متكامل، يجمع بين الطلاب والخريجين
+              والخبراء من مختلف المجالات، لتبادل المعارف، ومشاركة الخبرات،
+              وتقديم الدعم العملي في رحلة التطوير الشخصي والمهني.إلى جانب ذلك،
+              تعمل "ابدأ بسؤال" على إتاحة الفرص التطوعية، وتنظيم الفعاليات
+              والأنشطة الهادفة، التي تمكّن الشباب من توسيع شبكات علاقاتهم،
+              وتعزيز روح المبادرة، وتنمية قدراتهم على الابتكار والإبداع.
+            </p>
+          </div>
+
+          <div class="relative flex-1">
+            <div class="rounded-md w-full">
+              <img
+                src="../images/about-2.jpg"
+                alt="about"
+                class="w-full rounded-md overflow-hidden"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="py-10 flex flex-col md:flex-row justify-between items-center md:gap-5"
+        >
+          <div class="relative flex-1">
+            <div class="rounded-md w-full">
+              <img
+                src="../images/about-3.jpg"
+                alt="about"
+                class="w-full rounded-md overflow-hidden"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="flex-1">
+            <p class="text-slate-600 text-xl space-y-12">
+              من خلال هذه المبادرات، تهدف "ابدأ بسؤال" إلى تمكين الشباب من تحقيق
+              إمكاناتهم الكاملة، والمساهمة بفعالية في بناء مستقبل مشرق لأنفسهم
+              ولمجتمعاتهم. نحن نؤمن بأن الاستثمار في الشباب هو الاستثمار في
+              مستقبل أفضل للجميع، ونسعى جاهدين لأن نكون شريكاً موثوقاً في رحلتهم
+              نحو النجاح والتميز
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Start Featuers -->
+    <section class="py-16 bg-white" id="features">
+      <div class="container mx-auto px-3 md:px-0">
+        <!-- العنوان -->
+        <div class="mb-12 text-center">
+          <div class="mx-auto md:w-1/2">
+            <h1
+              class="w-fit mx-auto bg-[#a6225d1d] text-main text-sm font-bold px-5 py-1 rounded-md mb-3"
+            >
+              لماذا ابدأ بسؤال؟
+            </h1>
+            <p class="text-slate-800 font-bold md:text-3xl leading-relaxed">
+              نثق بأن كل سؤال هو بداية رحلة نحو المعرفة، وكل معرفة هي خطوة نحو
+              تحقيق الأحلام.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-5">
+          <div
+            class="p-8 rounded-md shadow-md border border-[#a6225b] hover:shadow-xl transition bg-[#fff6fa]"
+          >
+            <div class="mb-4 text-main text-5xl">
+              <i class="bx bxs-graduation"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3 text-slate-800">
+              الخبرة المباشرة والشخصية
+            </h3>
+            <p class="text-slate-600 leading-relaxed">
+              مؤسسو المنصة عاشوا تجربة الانتقال من التعليم الجامعي إلى الحياة
+              المهنية، مما يمنحهم فهمًا عميقًا للتحديات التي يواجهها الشباب،
+              ويجعلهم قادرين على تقديم الدعم والإرشاد المناسب.
+            </p>
+          </div>
+
+          <div
+            class="p-8 rounded-md shadow-md border border-[#a6225b] hover:shadow-xl transition bg-[#fdf3f8]"
+          >
+            <div class="mb-4 text-main text-5xl">
+              <i class="bx bxs-book-content"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3 text-slate-800">
+              البرامج الشاملة والفعّالة
+            </h3>
+            <p class="text-slate-600 leading-relaxed">
+              نقدم برامج تدريبية متكاملة صُممت خصيصًا لسد الفجوة بين التعليم
+              والعمل، بالاعتماد على خبرات المؤسسين وأفضل الممارسات العالمية.
+            </p>
+          </div>
+
+          <div
+            class="p-8 rounded-md shadow-md border border-[#a6225b] hover:shadow-xl transition bg-[#fff6fa]"
+          >
+            <div class="mb-4 text-main text-5xl">
+              <i class="bx bxs-rocket"></i>
+            </div>
+            <h3 class="font-bold text-xl mb-3 text-slate-800">
+              التركيز على التمكين العملي
+            </h3>
+            <p class="text-slate-600 leading-relaxed">
+              نزوّد الشباب بالمعرفة والمهارات اللازمة للنجاح المهني عبر التدريب
+              العملي والمحتوى الرقمي وورش العمل التفاعلية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Featuers -->
+
+    <!-- Start Statis -->
+    <section class="py-16 bg-sec" id="stats">
+      <div
+        id="stats"
+        class="container mx-auto px-3 md:px-0 grid md:grid-cols-4 gap-16"
+      >
+        <div
+          class="text-center flex flex-col items-center gap-3 p-5 bg-main rounded-md relative"
+        >
+          <div
+            class="w-[60px] h-[60px] flex justify-center items-center rounded-full absolute -top-5 -end-5 bg-slate-700 border-[7px] border-amber-50"
+          >
+            <i class="ti ti-confetti text-white text-2xl"></i>
+          </div>
+          <h2 class="mt-5 text-alt text-lg md:text-[50px] font-bold">
+            +<span data-counter="1000000">0</span>
+          </h2>
+          <p class="text-alt text-md md:text-xl">متابعين</p>
+        </div>
+        <div
+          class="text-center flex flex-col items-center gap-3 p-5 bg-main rounded-md relative"
+        >
+          <div
+            class="w-[60px] h-[60px] flex justify-center items-center rounded-full absolute -top-5 -end-5 bg-slate-700 border-[7px] border-amber-50"
+          >
+            <i class="ti ti-clover text-white text-2xl"></i>
+          </div>
+          <h2 class="mt-5 text-alt text-lg md:text-[50px] font-bold">
+            +<span data-counter="50">0</span>
+          </h2>
+          <p class="text-alt text-md md:text-xl">استشارات شخصية</p>
+        </div>
+        <div
+          class="text-center flex flex-col items-center gap-3 p-5 bg-main rounded-md relative"
+        >
+          <div
+            class="w-[60px] h-[60px] flex justify-center items-center rounded-full absolute -top-5 -end-5 bg-slate-700 border-[7px] border-amber-50"
+          >
+            <i class="ti ti-microphone text-white text-2xl"></i>
+          </div>
+          <h2 class="mt-5 text-alt text-lg md:text-[50px] font-bold">
+            <span data-counter="10">0</span>
+          </h2>
+          <p class="text-alt text-md md:text-xl">بث مباشر</p>
+        </div>
+        <div
+          class="text-center flex flex-col items-center gap-3 p-5 bg-main rounded-md relative"
+        >
+          <div
+            class="w-[60px] h-[60px] flex justify-center items-center rounded-full absolute -top-5 -end-5 bg-slate-700 border-[7px] border-amber-50"
+          >
+            <i class="ti ti-article text-white text-2xl"></i>
+          </div>
+          <h2 class="text-alt text-lg md:text-[50px] font-bold">
+            +<span data-counter="35">0</span>
+          </h2>
+          <p class="text-alt text-md md:text-xl">منشور</p>
+        </div>
+      </div>
+    </section>
+    <!-- End Statis -->
+
+    <!-- Start Vision -->
+    <section class="py-16 overflow-hidden">
+      <div class="container mx-auto px-3 md:px-0">
+        <div class="mb-10 text-center">
+          <head>
+            <div class="mx-auto md:w-1/2 text-center">
+              <h1
+                class="w-fit mx-auto bg-[#a6225d1d] text-main text-sm font-bold px-5 py-1 rounded-md mb-3"
+              >
+                رؤيتنا
+              </h1>
+              <p class="text-slate-800 font-bold md:text-3xl">
+                نؤمن أن كل شخص يملك فضولًا داخليًا يدفعه لفهم العالم من حوله،
+                وأن كل سؤال هو خطوة أولى نحو التطور.
+              </p>
+            </div>
+          </head>
+        </div>
+
+        <div class="py-12 grid grid-cols-1 md:grid-cols-3 gap-5 w-full">
+          <div class="relative z-10">
+            <div class="absolute -top-7 -right-7 h-20 w-20 bg-alt -z-1"></div>
+            <div class="p-3 md:p-10 bg-slate-800 z-40">
+              <h1 class="text-lg md:text-2xl text-alt font-bold">رسالتنا :</h1>
+              <p class="pt-3 text-slate-50">
+                تمكين الطلاب والخريجين والباحثين من الوصول إلى إجابات موثوقة
+                وواضحة لكل الأسئلة التي تدور في أذهانهم في الحياة الأكاديمية
+                والعملية، من خلال محتوى مبسّط، شامل، ومتاح للجميع ويهدف هذا
+                المحتوى إلى بناء مجتمع معرفي يُلهم البحث، ويعزّز فرص التعلم،
+                ويجسر الفجوة بين النظرية والتطبيق.
+              </p>
+            </div>
+          </div>
+          <div class="text-center flex flex-col gap-5 p-5">
+            <a
+              href="#"
+              class="mx-auto py-3 px-6 w-1/2 border border-slate-800 relative duration-300 hover:bg-slate-800 hover:text-[#F9D6B4]"
+              >تواصل معنا</a
+            >
+          </div>
+          <div class="relative z-10">
+            <div class="absolute -bottom-7 -left-7 h-20 w-20 border -z-1"></div>
+            <div class="p-3 md:p-10 bg-alt z-40">
+              <h1 class="text-lg md:text-2xl text-slate-800 font-bold">
+                رؤيتنا:
+              </h1>
+              <p class="pt-3 text-slate-600">
+                نسعى لأن نكون منصة رائدة في تمكين قدرات الشباب وحديثي التخرج. من
+                خلال تقديم خدمات تطوير وتدريب عملية وفعالة نهدف الى تزويدهم
+                بالادوات والمعرفة اللازمة لتعزيز مهاراتهم مما يمكنهم من النجاح
+                في بيئة العمل الديناميكية المتغيرة
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Vision -->
+
+    <!-- Start Testimonials -->
+    <section class="py-20 bg-[#f9f9f9]" id="testimonials">
+      <div class="container mx-auto px-5 md:px-0">
+        <div class="text-center mb-12">
+          <h1
+            class="w-fit mx-auto bg-[#a6225d1d] text-main text-sm font-bold px-5 py-1 rounded-md mb-3"
+          >
+            آراء عملاؤنا
+          </h1>
+          <p class="text-slate-800 font-bold md:text-3xl">
+            تجارب حقيقية تعكس أثرنا الإيجابي
+          </p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center text-center"
+              >
+                <img
+                  src="https://i.pravatar.cc/100?img=3"
+                  alt="client"
+                  class="w-20 h-20 rounded-full mb-4"
+                />
+                <p class="text-gray-600 italic mb-3">
+                  "التجربة كانت رائعة جدًا، ساعدوني أفهم مساري المهني بشكل
+                  أوضح."
+                </p>
+                <h4 class="text-main font-bold">أحمد محمد</h4>
+                <span class="text-sm text-gray-500">خريج جامعة</span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center text-center"
+              >
+                <img
+                  src="https://i.pravatar.cc/100?img=5"
+                  alt="client"
+                  class="w-20 h-20 rounded-full mb-4"
+                />
+                <p class="text-gray-600 italic mb-3">
+                  "منصة مختلفة فعلًا، لقيت فيها الدعم والتوجيه البحتاجو."
+                </p>
+                <h4 class="text-main font-bold">سارة علي</h4>
+                <span class="text-sm text-gray-500">طالبة جامعية</span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center text-center"
+              >
+                <img
+                  src="https://i.pravatar.cc/100?img=8"
+                  alt="client"
+                  class="w-20 h-20 rounded-full mb-4"
+                />
+                <p class="text-gray-600 italic mb-3">
+                  "الخدمات هنا بتخلي الواحد أكثر ثقة في نفسه ومستقبله."
+                </p>
+                <h4 class="text-main font-bold">مروان يوسف</h4>
+                <span class="text-sm text-gray-500">موظف مبتدئ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination + Navigation -->
+          <div class="swiper-pagination mt-5"></div>
+          <div class="swiper-button-next text-main"></div>
+          <div class="swiper-button-prev text-main"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials -->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-[#fcf4ed] text-slate-800 pt-10">
+      <div
+        class="container mx-auto px-3 md:px-0 pb-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10"
+      >
+        <!-- Logo + About -->
+        <div class="col-span-1">
+          <img src="../images/logo.png" alt="ابدأ بسؤال" class="w-24 mb-4" />
+          <p class="text-sm leading-relaxed">
+            منصة تهدف إلى تبسيط المعرفة، وتحفيز التفكير، وتمكين الشباب من خلال
+            مشاركة المحتوى والإرشاد العملي.
+          </p>
+        </div>
+
+        <!-- روابط سريعة -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">روابط مهمة</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a
+                href="#"
+                class="relative inline-block text-slate-800 transition-colors duration-300 hover:text-[#a6225b] before:absolute before:bottom-0 before:start-0 before:h-[2px] before:w-0 before:bg-[#a6225b] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                الرئيسية
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative inline-block text-slate-800 transition-colors duration-300 hover:text-[#a6225b] before:absolute before:bottom-0 before:start-0 before:h-[2px] before:w-0 before:bg-[#a6225b] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                من نحن
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative inline-block text-slate-800 transition-colors duration-300 hover:text-[#a6225b] before:absolute before:bottom-0 before:start-0 before:h-[2px] before:w-0 before:bg-[#a6225b] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                خدماتنا
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="relative inline-block text-slate-800 transition-colors duration-300 hover:text-[#a6225b] before:absolute before:bottom-0 before:start-0 before:h-[2px] before:w-0 before:bg-[#a6225b] before:transition-all before:duration-300 hover:before:w-full"
+              >
+                التواصل
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- خدماتنا -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">خدماتنا</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-main">جلسات استشارية</a></li>
+            <li><a href="#" class="hover:text-main">بودكاست مسارك</a></li>
+            <li><a href="#" class="hover:text-main">فرص تطوعية</a></li>
+            <li><a href="#" class="hover:text-main">دورات تدريبية</a></li>
+          </ul>
+        </div>
+
+        <!-- تواصل معنا -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">تواصل معنا</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <i class="ti ti-phone ms-5"></i> <span>+249 150 124 8489 </span>
+            </li>
+            <li>abda_b_soual@org.edu <i class="ti ti-mail me-1"></i></li>
+            <li><i class="ti ti-map-pin me-1"></i> السودان - الخرطوم</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="text-slate-800 bg-alt mt-10 py-5 text-center text-sm">
+        © 2025 ابدأ بسؤال. جميع الحقوق محفوظة.
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+        <!-- SwiperJS CDN -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
